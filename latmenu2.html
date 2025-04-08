@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Sidebar</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href ="latmenu2.html"onclick="showContent('home')">🏠Home</a></li>
+                <li><a href ="tentang.html"onclick="showContent('about')">🙍‍♀️Tentang</a></li>
+                <li><a href ="kontak.html"onclick="showContent('contact')">☎️Kontak</a></li>
+                <li><a href ="lbr.html"onclick="showContent('materi')">🚞Kegiatan Selama Liburan</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="home"class="content-section">
+                <h1>Minal Aidzin walfaidzin🙏</body></h1>
+                <p>Ini adalah halaman utama yang berisi kegiatan saya selama libur lebaran🤗</p>
+                <p>Silahkan jelajahi menu untuk melihat halaman lainnya!</p>
+            </section>
+            <section id="contact"class="content-section" style="display:none;">
+                <h1>Ini adalah halaman kontak.</h1>
+                <p>Silahkan hubungi kami melalui email di contact @nurraisyahhhh04gmail.com</p>
+                <p>Atau kunjungi kantor kami di alamat yang tersedia.</p>
+            </section>
+            <section id="materi"class="content-section"style="display:none;">
+                <h1>Materi pembelajaraan Web Programming</h1>
+                <p>1.Materi Semantic HTML</p>
+                <P>2.Materi CSS</P>
+                <p>3.Materi Penulisan CSS</p>
+                <p>4.Materi CSS Modren dan Responsive</p>
+                <p>5.Materi JavaScript</p>
+                <p>6.Materi Ajax</p>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>Desain by Nuraisyah😉</p>
+    </footer>
+    <script>
+        function showContent(sectionId){
+            let section=document.querySelectorAll('.content-section');
+            section.forEach ((section)=>(section.style.display='none'));
+            document.getElementByld(sectionId.style.display='block');
+        }
+    </script>
+</body>
+</html>

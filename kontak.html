@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontak</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <h1>KONTAK SAYA</h1>
+                <li>📩email : nurraisyahhhh04@gmail.com </li>
+                <li>📞whatsapp : 082392039925 </li>
+                
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="home"class="content-section">
+                <h1>🙍‍♀️Nuraisyah</h1>
+                <p>Silahkan hubungi melalui email ataupun kontak person Saya!
+                 
+                <p>Atau boleh kunjungi kampung halaman saya di alamat yang tersedia.</p>
+            </section>
+            <section id="contact"class="content-section" style="display:none;">
+                <h1>Ini adalah halaman kontak.</h1>
+                <p>Silahkan hubungi kami melalui email di contact @nurraisyahhhh04gmail.com</p>
+                <p>Atau kunjungi kantor kami di alamat yang tersedia.</p>
+            </section>
+            <section id="materi"class="content-section"style="display:none;">
+                <h1>Materi pembelajaraan Web Programming</h1>
+                <p>1.Materi Semantic HTML</p>
+                <P>2.Materi CSS</P>
+                <p>3.Materi Penulisan CSS</p>
+                <p>4.Materi CSS Modren dan Responsive</p>
+                <p>5.Materi JavaScript</p>
+                <p>6.Materi Ajax</p>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>Desain by Nuraisyah😉</p>
+    </footer>
+    <script>
+        function showContent(sectionId){
+            let section=document.querySelectorAll('.content-section');
+            section.forEach ((section)=>(section.style.display='none'));
+            document.getElementByld(sectionId.style.display='block');
+        }
+    </script>
+</body>
+</html>
+    
